@@ -1,0 +1,59 @@
+/* p{
+    text-align: center;
+} 
+
+ #paragraph{
+    text-align: center;
+} 
+
+ .center-para{
+    text-align: center;
+} */
+
+/* universal selectors */
+/* *{
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* group selectors */
+/* h1,.center-para,p{
+    text-align: center;
+    color: brown;
+} */
+
+/* COMBINATOR SELECTORS */
+
+/* 1.descendent selector  */
+/* div p{
+    background-color: yellow;
+} */
+
+/* 2.child selector */
+/* div > p{
+    background-color: cyan;
+} */
+
+/* 3.Adjacent Sibling Selector */
+/* div + p{
+    background-color: yellow;
+} */
+
+/* 4.general Sibling Selector */
+/* div ~ p{
+    background-color: yellow;
+} */
+
+/* #Pseudo-class selectors */
+/* div ~ p:hover{
+    background-color: yellow;
+} */
+
+/* # Psuedo-element Selector */
+/* div ~ p::first-letter{
+    color: brown;
+} */
+
+/* # Attribute Selector */
+a[target]{
+    background-color: cyan;
+}
