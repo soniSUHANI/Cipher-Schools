@@ -1,0 +1,27 @@
+import { useState } from "react";
+import AddTask from "./components/AddTask";
+import ToDoScreen from "./screens/ToDoScreen";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <ToDoScreen />,
+    },
+    {
+        path: "/add-task",
+        element: <AddTask />,
+    },
+]);
+
+const App = ()=>{
+    const [tasks, setTasks] = useState([]);
+    return <RouterProvider router={router} />
+};
+
+// const App = ()=>{
+//     return <ToDoScreen />
+// }
+
+export default App;
